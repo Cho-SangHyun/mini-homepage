@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/layout.css">
+    <link rel="stylesheet" href="./static/photobook.css">
+    <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css' rel='stylesheet' type='text/css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <title>2022 MINI HOMEPAGE_MOGAKCO</title>
+</head>
+<body>
+    <div class="bookcover">
+        <div class="bookdot">
+            <div class="page">
+                <div class="page-left">
+                    <div class="guest-count">
+                        TODAY 28 | TOTAL 220118
+                    </div>
+                    <div class="content profile-section">
+                        <img src="./static/images/profile.png" alt="profile image" id="profile-image">
+                        <p id="profile-message">접었던 유튜브를 조만간 다시 할 계획이다. 근데 어떤 영상을 올릴까? 다시 브이로그를 찍어봐야겠다.</p>
+                        <div class="padotagi">
+                            <select name="pado" id="pado">
+                                <option value="none" selected disabled hidden>파도타기</option>
+                                <option value="https://comu.oopy.io/">코뮤니티로 가기</option>
+                                <option value="https://www.instagram.com/">인스타그램 놀러가기</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-center">
+                    <div class="page-title">
+                        <div class="title">난 7r끔..ㄴㅜㄴ물을 흘린Dㅏ..</div>
+                        <div class="url-section">http://www.naver.com</div>
+                    </div>
+                    <div class="content main-section">
+                        <div class="photo-title">난 비오는 날이 좋더라</div>
+                        <div class="photo-content">
+                            <img src="./static/images/rain1.jpg" alt="비1" class="photo">
+                        </div>
+                        <div class="photo-description">감성이 터진달까..?</div>
+                        <div class="photo-title">비올 때 걷는 게 좋아</div>
+                        <div class="photo-content">
+                            <img src="./static/images/rain2.jpg" alt="비2" class="photo">
+                        </div>
+                        <div class="photo-description">너무 많이 오는 건 싫지. 적당~히 올 때가 좋아</div>
+                        <div class="photo-title">rainism</div>
+                        <div class="photo-content">
+                            <img src="./static/images/rain3.jpg" alt="비3" class="photo">
+                        </div>
+                        <div class="photo-description">딱 한 가지. 신발 젖는 건 싫어졌어</div>
+                    </div>
+                </div>
+                <div class="menu-bar">
+                    <a href="./home.html"><button class="menu">홈</button></a>
+                    <a href="./diary.html"><button class="menu">다이어리</button></a>
+                    <a href="#"><button class="menu">사진첩</button></a>
+                    <a href="./guestbook.html"><button class="menu">방명록</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        window.onload = function(){
+            const PADO = document.getElementById("pado");
+            PADO.onchange = function(){
+                location.href = this.value;
+            }
+        }
+    </script>
+</body>
+</html>

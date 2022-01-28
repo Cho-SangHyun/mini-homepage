@@ -1,0 +1,154 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
+}
+
+html, body{
+    /* 화면에 꽉 채우려면 html, body에 둘다 height: 100%를 일단 멕여야 함 */
+    height: 100%;
+    /* 기본으로 있는 마진 없애기 */
+    margin: 0;
+}
+
+body{
+    /* 백그라운드 이미지와 컬러를 동시에 하면 이미지 밑에 컬러가 깔리는 느낌
+    즉 이미지에 투명한 부분이 있으면 그 곳은 컬러 설정한 부분이 보인다 */
+    background-color: #a3a3a3;
+    background-image: url("./images/pattern.png");
+    background-size: 100px;
+}
+
+/* 반응형 X */
+.bookcover{
+    width: 1080px;
+    height: 620px;
+    background-color: rgb(171, 193, 233);
+
+    margin: 0 auto;
+    border-radius: 10px;
+
+    position: relative;
+    top: 50px; 
+}
+
+.bookdot{
+    width: 1060px;
+    height: 600px;
+    background-color: transparent;
+
+    border-radius: 10px;
+    border: 3px dashed rgb(238, 238, 238);
+
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.page{
+    width: 1040px;
+    height: 580px;
+    background-color: rgb(238, 238, 238);
+    padding: 12px;
+
+    border-radius: 10px;
+
+    position: absolute;
+    top: 7px;
+    left: 8px;
+
+    display: flex;
+}
+
+.page-left{
+    flex: 0.35;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-right: 1.25rem;
+}
+
+.page-center{
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-bar{
+    flex: 0.15;
+    display: flex;
+    flex-direction: column;
+    padding-top: 75px;
+}
+
+.guest-count{
+    flex: 0.075;
+    font-size: 0.75rem;
+}
+
+.page-title{
+    flex: 0.075;
+    display: flex;
+}
+
+.title{
+    flex: 1;
+}
+
+.url-section{
+    flex: 0.5;
+}
+
+.content{
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid rgb(206, 206, 206);
+    width: 100%;
+    flex: 1;
+
+    padding: 0.75rem;
+}
+
+.profile-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#profile-image{
+    height: 180px;
+    width: 160px;
+}
+
+#profile-message{
+    margin-top: 0;
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 1.25rem;
+    text-align: justify;
+}
+
+.padotagi{
+    margin-top: 185px;
+}
+.menu{
+    width: 70px;
+    padding: 0.25rem;
+    margin-bottom: 0.5rem;
+    border: none;
+    background-color: rgb(73, 129, 202);
+    color: white;
+    text-align: left;
+    border-radius: 0 5px 5px 0;
+    font-weight: bold;
+    font-size: 0.8rem;
+    transition: all ease-in-out .1s;
+}
+
+.menu:hover{
+    cursor: pointer;
+    background-color: rgb(0, 86, 199);
+    box-shadow: 2px 2px 3px 2px rgb(170, 185, 204);
+    transform: scale(1.05);
+}
